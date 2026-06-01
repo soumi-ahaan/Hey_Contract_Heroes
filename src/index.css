@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+/* Google font */
+body{
+  font-family: "Mona Sans", sans-serif;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'Aspekta';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/Aspekta-700.woff2') format('woff2');
+}
+
+.font-heading {
+  font-family: 'Aspekta', sans-serif;
+}
+
+.font-display{
+  font-family: "Playfair Display", serif;
+}
+
+/* Hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.animate-x-float {
+  animation: float1 3s ease-in-out infinite;
+}
