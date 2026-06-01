@@ -8,7 +8,7 @@ export default function Blog() {
 
     // FETCH BLOGS
     useEffect(() => {
-        fetch("https://heycontractheroes.ahaanmedia.com/wp-json/wp/v2/posts?_embed")
+        fetch("https://soumi.ahaanmedia.com/wp-json/wp/v2/posts?_embed")
             .then((res) => res.json())
             .then((data) => {
                 setBlogs(data);
